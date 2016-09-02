@@ -1,5 +1,6 @@
 -- delete existing rows
 TRUNCATE parents CASCADE;
+
 -- <><><><><><><><><><><><><><><>
   -- Create parents
 -- <><><><><><><><><><><><><><><>

@@ -4,9 +4,9 @@ TRUNCATE teachers CASCADE;
 -- Teachers
 -- <><><><><><><><><><><><><><><>
 
-INSERT INTO teachers (first_name, last_name, house)
+INSERT INTO teachers (first_name, last_name)
 VALUES
-('Minerva', 'McGonagall', 'Gryffindor'),
-('Filius', 'Flitwick', 'Ravenclaw'),
-('Pomona', 'Sprout', 'Hufflepuff'),
-('Severus', 'Snape', 'Slytherin');
+('Minerva', 'McGonagall'),
+('Filius', 'Flitwick'),
+('Pomona', 'Sprout'),
+('Severus', 'Snape');

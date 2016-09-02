@@ -10,6 +10,7 @@ VALUES
   ('Bill', 'Weasley', 1982),
   ('Charlie', 'Weasley', 1983),
   ('Percy Ignatius', 'Weasley', 1987),
+  ('Harry', 'Potter', 1991),
 -- Ravenclaw : head : Professor Filius Flitwick
   ('Cho', 'Chang', 1990),
   ('Marietta', 'Edgecombe', 1990),

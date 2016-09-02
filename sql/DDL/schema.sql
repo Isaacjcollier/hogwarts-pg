@@ -17,24 +17,31 @@ CREATE TABLE parents (
 
 CREATE TABLE teachers (
   id serial primary key,
-  name varchar NOT NULL,
-  house varchar NOT NULL
+  first_name varchar NOT NULL,
+  last_name varchar NOT NULL
 );
 
 CREATE TABLE classes (
   id serial primary key,
-  subject varchar NOT NULL
+  subject varchar NOT NULL,
+  teacher_id integer
 );
 
 CREATE TABLE classes_teachers (
+  id serial primary key,
  teacher_id integer REFERENCES teachers(id)
 );
 
+CREATE TABLE houses (
+  id serial primary key,
+  house_name varchar NOT NULL,
+  teacher varchar
+);
 -- Join Tables
 
 CREATE TABLE students_parents (
   parent_id integer REFERENCES parents(id),
-  child_of integer REFERENCES students(id)
+  student_id integer REFERENCES students(id)
 );
 
 CREATE TABLE students_classes (
